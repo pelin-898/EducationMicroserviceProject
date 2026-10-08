@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36804.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{A138F2B9-112B-4DFB-9F9E-2157695396C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "catalog", "catalog", "{26283CE7-AB9A-41F0-B987-B7790F6768D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EducationMicroserviceProject.Catalog.API", "EducationMicroserviceProject.Catalog.API\EducationMicroserviceProject.Catalog.API.csproj", "{FDA43412-AC5E-466E-A8B4-C2B9DAE6A747}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{81DDED9D-158B-E303-5F62-77A2896D2A5A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "shared", "shared", "{DD11EB78-664E-42C2-9BF5-FEA6BA514F36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EducationMicroserviceProject.Shared", "..\EducationMicroserviceProject.Shared\EducationMicroserviceProject.Shared.csproj", "{C0BEA2C8-C895-46A8-8816-2F9D61238E06}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "basket", "basket", "{5D955CD6-A8A6-441C-A084-845E85E1A110}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EducationMicroserviceProject.Basket.API", "..\EducationMicroserviceProject.Basket.API\EducationMicroserviceProject.Basket.API.csproj", "{941F9DFC-ED19-4606-A30C-BBEEDE277DE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "discount", "discount", "{37EAF57C-BC74-4F1A-813A-9513824EDC8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EducationMicroserviceProject.Discount.API", "EducationMicroserviceProject.Discount.API\EducationMicroserviceProject.Discount.API.csproj", "{FE11A786-56AE-4DAE-8D5B-E8D8D7DB58D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "file", "file", "{CFA7E69F-DBFB-473A-8C17-FAB2D433B143}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EducationMicroserviceProject.File.API", "EducationMicroserviceProject.File.API\EducationMicroserviceProject.File.API.csproj", "{7EBC9979-8312-4C0E-85AB-76A9D9BBD003}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDA43412-AC5E-466E-A8B4-C2B9DAE6A747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDA43412-AC5E-466E-A8B4-C2B9DAE6A747}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDA43412-AC5E-466E-A8B4-C2B9DAE6A747}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDA43412-AC5E-466E-A8B4-C2B9DAE6A747}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81DDED9D-158B-E303-5F62-77A2896D2A5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0BEA2C8-C895-46A8-8816-2F9D61238E06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0BEA2C8-C895-46A8-8816-2F9D61238E06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0BEA2C8-C895-46A8-8816-2F9D61238E06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0BEA2C8-C895-46A8-8816-2F9D61238E06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{941F9DFC-ED19-4606-A30C-BBEEDE277DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{941F9DFC-ED19-4606-A30C-BBEEDE277DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{941F9DFC-ED19-4606-A30C-BBEEDE277DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{941F9DFC-ED19-4606-A30C-BBEEDE277DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE11A786-56AE-4DAE-8D5B-E8D8D7DB58D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE11A786-56AE-4DAE-8D5B-E8D8D7DB58D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE11A786-56AE-4DAE-8D5B-E8D8D7DB58D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE11A786-56AE-4DAE-8D5B-E8D8D7DB58D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EBC9979-8312-4C0E-85AB-76A9D9BBD003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EBC9979-8312-4C0E-85AB-76A9D9BBD003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EBC9979-8312-4C0E-85AB-76A9D9BBD003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EBC9979-8312-4C0E-85AB-76A9D9BBD003}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A138F2B9-112B-4DFB-9F9E-2157695396C2} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{26283CE7-AB9A-41F0-B987-B7790F6768D0} = {A138F2B9-112B-4DFB-9F9E-2157695396C2}
+		{FDA43412-AC5E-466E-A8B4-C2B9DAE6A747} = {26283CE7-AB9A-41F0-B987-B7790F6768D0}
+		{DD11EB78-664E-42C2-9BF5-FEA6BA514F36} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{C0BEA2C8-C895-46A8-8816-2F9D61238E06} = {DD11EB78-664E-42C2-9BF5-FEA6BA514F36}
+		{5D955CD6-A8A6-441C-A084-845E85E1A110} = {A138F2B9-112B-4DFB-9F9E-2157695396C2}
+		{941F9DFC-ED19-4606-A30C-BBEEDE277DE9} = {5D955CD6-A8A6-441C-A084-845E85E1A110}
+		{37EAF57C-BC74-4F1A-813A-9513824EDC8F} = {A138F2B9-112B-4DFB-9F9E-2157695396C2}
+		{FE11A786-56AE-4DAE-8D5B-E8D8D7DB58D9} = {37EAF57C-BC74-4F1A-813A-9513824EDC8F}
+		{CFA7E69F-DBFB-473A-8C17-FAB2D433B143} = {A138F2B9-112B-4DFB-9F9E-2157695396C2}
+		{7EBC9979-8312-4C0E-85AB-76A9D9BBD003} = {CFA7E69F-DBFB-473A-8C17-FAB2D433B143}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50AA20E0-47C7-4F49-BF50-DDA834120B4F}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,57 @@
+@baseAddress = http://localhost:5075
+@categoryId=08deb72e-1089-dd5f-28f1-0e07fc250000
+@courseId=08deaf2f-791f-5840-28f1-0e07fc250000
+@userId=fc250000-0e07-28f1-23a5-08deaf2f791f
+
+GET {{baseAddress}}/api/v1/categories
+Accept: application/json
+###
+POST {{baseAddress}}/api/v1/categories
+Accept: application/json
+Content-Type:application/json
+{
+    "name":"Category 1"
+}
+###
+GET {{baseAddress}}/api/v1/categories/{{categoryId}}
+Accept: application/json
+
+
+###
+POST {{baseAddress}}/api/v1/courses
+Accept: application/json
+Content-Type:application/json
+{
+    "name":"New2",
+    "description":"New Course2",
+    "price":99.99,
+    "imageUrl":"http://example.com/picture.jpg",
+    "categoryId":"{{categoryId}}"
+}
+###
+GET {{baseAddress}}/api/v1/courses
+Accept: application/json
+###
+GET {{baseAddress}}/api/v1/courses/{{courseId}}
+Accept: application/json
+
+###
+PUT {{baseAddress}}/api/v1/courses
+Accept: application/json
+Content-Type:application/json
+{
+    "Id": "{{courseId}}",
+    "name":"New3",
+    "description":"New Course3",
+    "price":199.99,
+    "imageUrl":"http://example.com/picture.jpg",
+    "categoryId":"{{categoryId}}"
+}
+###u
+Delete {{baseAddress}}/api/v1/courses/{{courseId}}
+Accept: application/json
+
+###
+Get {{baseAddress}}/api/v1/courses/user/{{userId}}
+Accept: application/json
+###

@@ -1,0 +1,35 @@
+@baseAddress = http://localhost:5164
+@courseId=3fa85f64-5717-4562-b3fc-2c963f66afa2
+
+GET {{baseAddress}}/api/v1/baskets/user
+Accept: application/json
+Content-Type:application/json
+###
+
+POST {{baseAddress}}/api/v1/baskets/item
+Accept: application/json
+Content-Type:application/json
+{
+  "courseId": "{{courseId}}",
+  "courseName": "zz",
+  "coursePrice": 20
+}
+###
+DELETE {{baseAddress}}/api/v1/baskets/item/{{courseId}}
+Accept: application/json
+Content-Type:application/json
+
+###
+PUT {{baseAddress}}/api/v1/baskets/apply-discount-coupon
+Accept: application/json
+Content-Type:application/json
+{
+   "coupon": "abcdef",
+   "discountRate": 0.2
+}
+###
+DELETE {{baseAddress}}/api/v1/baskets/rewmove-discount-coupon
+Accept: application/json
+Content-Type:application/json
+
+###
