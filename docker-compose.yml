@@ -78,10 +78,24 @@ services:
       ME_CONFIG_MONGODB_URL: mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@mongo.db.discount:27017/
       ME_CONFIG_BASICAUTH: "false"
     depends_on:
-      - mongo.db.catalog
+      - mongo.db.discount
+  sqlserver.db.order:
+    restart: always
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver.db.order
+    user: root
+    environment:
+      MSSQL_SA_PASSWORD: ${SA_PASSWORD}
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1434:1433"
+    volumes:
+      - sqlserver.db.order.volume:/var/opt/mssql
+ 
 
 
 volumes:
   mongo.db.catalog.volume: 
   redis.db.basket.volume:
-  mongo.db.discount.volume:   
+  mongo.db.discount.volume:  
+  sqlserver.db.order.volume:

@@ -1,0 +1,6 @@
+@EducationMicroserviceProject.Order.API_HostAddress = http://localhost:5149
+
+GET {{EducationMicroserviceProject.Order.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
